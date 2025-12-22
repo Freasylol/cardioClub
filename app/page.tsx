@@ -38,9 +38,9 @@ export default function Home() {
                 <div className="intro__inner">
                     <Image src={introImg} alt=""></Image>
                     <div className="intro__inner__block">
-                        <div className="intro__inner__title">
+                        <h1 className="intro__inner__title">
                             Cardio <span>Club</span>
-                        </div>
+                        </h1>
                         <div className="intro__inner__text">
                             Cайт для врачей, которые хотят быть в курсе всех новинок кардиологии, терапии и качать свои знания в ЭКГ. Присоединяйся к сообществу, где ведущие специалисты повышают квалификацию и идут в ногу с новейшими исследованиями!
                         </div>
@@ -49,6 +49,23 @@ export default function Home() {
                                 Поехали!
                             </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="search">
+            <div className="container">
+                <div className="search__inner">
+                    <div className="search__header">
+                        Поиск по сайту
+                    </div>
+                    <div className="search__text">
+                        Введите тему, которая вас интересует и найдите полезные статьи на сайте
+                    </div>
+                    <input type="text" placeholder="Введите ваш запрос" className="search__input">
+                    </input>
+                    <div className="search__input__text">
+                        Например: «Инфаркт миокарда на ЭКГ», «Как высчитать ЧСС?», ЭОС...
                     </div>
                 </div>
             </div>
