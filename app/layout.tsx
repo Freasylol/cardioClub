@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat, Unbounded } from "next/font/google";
 import "./styles/globals.css";
 
 const geistSans = Geist({
@@ -11,6 +11,17 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const montserrat = Montserrat({
+    variable: "--font-montserrat",
+    subsets: ["latin", "cyrillic"]
+});
+
+
+const unbounded = Unbounded({
+    variable: "--font-unbounded",
+    subsets: ["latin", "cyrillic"]
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} ${unbounded.variable} antialiased`}
       >
         {children}
       </body>
