@@ -13,13 +13,13 @@ export default function Header() {
                     </Link>
                     <nav className="nav">
                         <div className="nav__inner">
-                                <div className="nav__link">Новости</div>
-                                <div className="nav__link">Видеолекции</div>
-                                <div className="nav__link">ЭКГ</div>
-                                <div className="nav__link">Курсы</div>
-                                <div className="nav__link">Литература</div>
-                                <div className="nav__link">Помощник кардиолога</div>
-                                <div className="nav__link">О нас</div>   
+                            <div className="nav__link">Новости</div>
+                            <div className="nav__link">Видеолекции</div>
+                            <div className="nav__link">ЭКГ</div>
+                            <div className="nav__link">Курсы</div>
+                            <div className="nav__link">Литература</div>
+                            <div className="nav__link">Помощник кардиолога</div>
+                            <div className="nav__link">О нас</div>   
                         </div>
                     </nav>
                     <input type="text" placeholder="Поиск" className="nav__input">

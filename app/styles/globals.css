@@ -385,9 +385,148 @@ button {
   flex: 0 0 calc(100% / 3); /* каждый элемент занимает треть ширины */
   box-sizing: border-box;
   padding: 10px;
+
+  height: 565px;
 }
 
+/* Footer ======================= */
 
+.footer {
+    background-color: #F4F7FF;
+    margin-top: 45px;
+    padding-top: 45px;
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__inner__item__card {
+    background-color: #fff;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    height: 120px;
+}
+
+.footer__inner__item__block {
+    width: 65%;
+
+    display: flex;
+}
+
+.footer__inner__item__link__block {
+    margin-top: 20px;
+    margin-bottom: 70px;
+
+    display: flex;
+}
+
+.footer__inner__item__link {
+    margin-left: 40px;
+
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.footer__inner__item__description__header {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 15px;
+    
+
+    margin-top: 20px;
+}
+
+.footer__inner__item__link:first-child {
+    margin-left: 80px;
+}
+
+.footer__inner__item__img {
+    width: 25px;
+    height: 22px;
+
+    margin-top: 35px;
+    margin-left: 35px;
+}
+
+.footer__inner__item__1 {
+    width: 55%;
+}
+
+.footer__inner__item__2 {
+    width: 45%;
+
+    margin-left: 50px;
+}
+
+.footer__inner__item__2 .footer__inner__item__description {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    leading-trim: NONE;
+    line-height: 123%;
+    letter-spacing: 0.34px;
+
+
+    padding: 5px 35px 20px 35px;
+}
+
+.footer__inner__item__1 .footer__inner__item__description {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    leading-trim: NONE;
+    line-height: 123%;
+    letter-spacing: 0.34px;
+
+    padding: 30px 35px 35px 20px;
+}
+
+.footer__socials {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__socials__container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    margin-top: 15px;
+}
+
+.footer__socials__header {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 15px;
+    leading-trim: NONE;
+    line-height: 115.99999999999999%;
+    letter-spacing: 0.37px;
+}
+
+.footer__socials__copyright {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 126%;
+    letter-spacing: 0.34px;
+
+    margin-top: 30px;
+}
 
 
 
