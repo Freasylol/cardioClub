@@ -1,5 +1,6 @@
 import Image from "next/image";
 import introImg from "../../public/images/intro-img.png";
+import Button from "./Button";
 
 export default function Intro() {
   return (
@@ -15,9 +16,7 @@ export default function Intro() {
                         Cайт для врачей, которые хотят быть в курсе всех новинок кардиологии, терапии и качать свои знания в ЭКГ. Присоединяйся к сообществу, где ведущие специалисты повышают квалификацию и идут в ногу с новейшими исследованиями!
                     </div>
                     <div className="intro__inner__button__wrapper">
-                        <button className="intro__inner__button">
-                            Поехали!
-                        </button>
+                        <Button>Поехали!</Button>;
                     </div>
                 </div>
             </div>

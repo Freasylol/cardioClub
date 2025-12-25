@@ -1,8 +1,9 @@
-import Header from "./components/header";
-import Intro from "./components/intro";
-import Search from "./components/search";
-import Slider from "./components/slider";
-import Footer from "./components/footer";
+import Header from "./components/Header";
+import Intro from "./components/Intro";
+import Search from "./components/Search";
+import Slider from "./components/Slider";
+import Footer from "./components/Footer";
+import RegisterForm from "./components/RegisterForm";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Intro />
         <Search />
         <Slider />
+        <RegisterForm />
         <Footer />
     </div>
   );
