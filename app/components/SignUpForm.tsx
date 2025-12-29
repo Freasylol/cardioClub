@@ -1,11 +1,13 @@
 'use client'
 
+import googleLogo from '../../public/images/google__logo.png';
+import Image from 'next/image';
 import { useState } from 'react'
 import { registerUser } from '../actions/loginformAction';
 import Button from './Button';
-import styles from '../styles/Form.module.css';
+import styles from '../styles/SignUpForm.module.css';
 
-export default function RegisterForm() {
+export default function SignUpForm() {
   const [message, setMessage] = useState<string | null>(null)
 
   async function handleAction(formData: FormData) {
@@ -25,8 +27,8 @@ export default function RegisterForm() {
                 borderRadius="1.25rem">
                 по почте
                 </Button>
-            <button type="button" className={styles.switcherGoogle}>
-                <span className="text-lg">G</span>
+            <button type="button" className={styles.switcher__google}>
+                <Image src={googleLogo} alt='' className={styles.google__logo}></Image>
                 <span>через Google</span>
             </button>
         </div>

@@ -13,6 +13,7 @@
   background-color: #F4F7FF;
   /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); */
   padding: 4rem;
+  font-family: var(----font-unbounded);
 }
 
 .title {
@@ -38,11 +39,11 @@
   font-weight: 600;
 } */
 
-.switcherGoogle {
+.switcher__google {
   flex: 1;
   border-radius: 9999px;
-  border: 1px solid #2f6bff;
-  color: #2f6bff;
+  border: 2px solid #4480EA;
+  color: #4480EA;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 0.9375rem;
@@ -51,10 +52,25 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+
+  transition: all 0.2s ease-in-out;
 }
 
-.switcherGoogle span:first-child {
-  font-size: 1.125rem;
+.switcher__google:hover {
+    transform: scale(1.05);
+    border-color: #2964CC
+}
+
+.switcher__google span {
+    font-family: var(----font-unbounded);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 0.9275rem;
+    leading-trim: NONE;
+    line-height: 117%;
+    letter-spacing: 0.5px;
+    text-align: center;
+    vertical-align: bottom;
 }
 
 .form {
@@ -127,4 +143,9 @@
   font-weight: 600;
   border: none;
   cursor: pointer;
+}
+
+.google__logo {
+    height: 1.25rem;
+    width: 1.25rem;
 }

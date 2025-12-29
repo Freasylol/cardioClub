@@ -3,7 +3,7 @@ import Intro from "./components/Intro";
 import Search from "./components/Search";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
-import RegisterForm from "./components/RegisterForm";
+import Community from "./components/Community";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <Intro />
         <Search />
         <Slider />
-        <RegisterForm />
+        <Community />
         <Footer />
     </div>
   );
