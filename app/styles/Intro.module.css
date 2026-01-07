@@ -1,0 +1,57 @@
+.intro__inner {
+    margin-top: 5rem;
+    
+    display: flex;  
+}
+
+.intro__inner__block {
+    margin-left: 7.5rem;
+    margin-top: 4.6875rem;
+}
+
+.intro__inner__title {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #8A1A1A;
+}
+
+.intro__inner__title span {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #4480EA;
+}
+
+.intro__inner__text {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: .9375rem;
+
+    width: 26.25rem;
+
+    margin-top: 3.125rem;
+}
+
+.intro__inner__button__wrapper {
+    margin-top: 3.4375rem;
+}
+
+.intro__inner__button {
+    padding: .9375rem 1.5625rem;
+    background-color: #4480EA;
+
+    font-family: var(--font-unbounded);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 1.25rem;
+
+    color: #fff;
+
+    border-radius: .625rem;
+}

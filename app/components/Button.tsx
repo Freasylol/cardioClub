@@ -23,9 +23,9 @@ export default function Button({
     <button 
       className={styles.button}
       style={{
-        '--button-font-size': fontSize || '20px',
-        '--button-padding': padding || '15px 25px',
-        '--button-border-radius': borderRadius || '10px',
+        '--button-font-size': fontSize || '1.25rem',
+        '--button-padding': padding || '.9375rem 1.5625rem',  
+        '--button-border-radius': borderRadius || '.625rem',
         '--button-background-color': backgroundColor || '#4480EA'
       } as React.CSSProperties}
       {...props}

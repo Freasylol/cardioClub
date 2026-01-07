@@ -6,6 +6,8 @@ import materialImg1 from "../../public/images/materials__img__1.png";
 import materialImg2 from "../../public/images/materials__img__2.png";
 import materialImg3 from "../../public/images/materials__img__3.png";
 
+import styles from "../styles/Slider.module.css";
+
 const materials = [
   {
     img: materialImg1,
@@ -74,37 +76,37 @@ export default function Slider() {
   const visibleItems = materials.slice(startIndex, startIndex + visibleCount);
 
   return (
-    <div className="materials">
+    <div className={styles.materials}>
       <div className="container">
-        <div className="materials__inner">
+        <div className={styles.materials__inner}>
             <button
-        className="slider__arrow slider__arrow__left"
+        className={`${styles.slider__arrow} ${styles.slider__arrow__left}`}
         onClick={handlePrev}
       >
         ‹
       </button>
-          <h2 className="header__style materials_header">Последние материалы</h2>
-          <div className="materials__slider">
+          <h2 className={`header__style ${styles.materials_header}`}>Последние материалы</h2>
+          <div className={styles.materials__slider}>
             {visibleItems.map((item, index) => (
-              <div className="materials__item" key={index}>
+              <div className={styles.materials__item} key={index}>
                 <Image
                   src={item.img}
-                  className="materials__item__img"
+                  className={styles.materials__item__img}
                   alt={item.subheader}
                 />
-                <div className="materials__item__text">
-                  <div className="materials__item__header">{item.header}</div>
-                  <div className="materials__item__subheader">
+                <div className={styles.materials__item__text}>
+                  <div className={styles.materials__item__header}>{item.header}</div>
+                  <div className={styles.materials__item__subheader}>
                     {item.subheader}
                   </div>
-                  <div className="materials__item__description">
+                  <div className={styles.materials__item__description}>
                     {item.description}
                   </div>
                 </div>
               </div>
             ))}
              <button
-                className="slider__arrow slider__arrow__right"
+                className={`${styles.slider__arrow} ${styles.slider__arrow__right}`}
                 onClick={handleNext}
             >
                 ›

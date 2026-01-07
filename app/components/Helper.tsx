@@ -1,5 +1,6 @@
 import styles from '../styles/Helper.module.css';
 import Button from './Button';
+import DescriptionText from './DescriptionText';
 
 
 export default function Helper() {
@@ -13,9 +14,9 @@ export default function Helper() {
                             <div className={styles.header}>
                                 Библиотека ЭКГ
                             </div>
-                            <div className={styles.description}>
+                            <DescriptionText className={styles.description}>
                                 Всё, что нужно знать об ЭКГ. От базы до сложных патологий.  С картинками, схемами, примерами плёнок и тестами для самопроверки.
-                            </div>
+                            </DescriptionText>
                             <div className={styles.button}>
                                  <Button
                                 fontSize="0.9375rem"
@@ -29,8 +30,9 @@ export default function Helper() {
                             <div className={styles.header}>
                                 Видеолекции
                             </div>
-                            <div className={styles.description}>
-Бесплатные лекции по кардиологии, терапии и ЭКГ. Обзор сложных тем с рисунками и дополнительными материалами.                            </div>
+                            <DescriptionText className={styles.description}>
+                                Бесплатные лекции по кардиологии, терапии и ЭКГ. Обзор сложных тем с рисунками и дополнительными материалами.
+                            </DescriptionText>
                             <div className={styles.button}>
                                  <Button
                                 fontSize="0.9375rem"
@@ -44,8 +46,9 @@ export default function Helper() {
                             <div className={styles.header}>
                                 Видеокурсы
                             </div>
-                            <div className={styles.description}>
-Обучающие программы для врачей. Курсы с в записи и с обратной связью от кураторов.Проверка домашних заданий, баллы НМО.                            </div>
+                            <DescriptionText className={styles.description}>
+                                Обучающие программы для врачей. Курсы с в записи и с обратной связью от кураторов.Проверка домашних заданий, баллы НМО.
+                            </DescriptionText>
                             <div className={styles.button}>
                                  <Button
                                 fontSize="0.9375rem"
@@ -59,8 +62,9 @@ export default function Helper() {
                             <div className={`${styles.header} ${styles.red}`}>
                                 Помощник кардиолога
                             </div>
-                            <div className={styles.description}>
-Удобные и полезные в работе таблицы, калькуляторы и схемы, незаменимые для кардиолога.                            </div>
+                            <DescriptionText className={styles.description}>
+                                Удобные и полезные в работе таблицы, калькуляторы и схемы, незаменимые для кардиолога.
+                            </DescriptionText>
                             <div className={styles.button}>
                                  <Button
                                 fontSize="0.9375rem"

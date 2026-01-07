@@ -47,14 +47,6 @@
 }
 
 .description {
-    font-family: var(--font-montserrat);
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 15px;
-    leading-trim: NONE;
-    line-height: 123%;
-    letter-spacing: 0.34px;
-
     width: 66%; 
 
     background-color: #fff;

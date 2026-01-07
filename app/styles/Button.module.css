@@ -3,10 +3,10 @@
   background-color: var(--button-background-color) !important;
   font-family: var(--font-unbounded, sans-serif);
   font-weight: 700;
-  font-size: var(--button-font-size, 20px) !important;
+  font-size: var(--button-font-size, 1.25rem) !important;
   color: #fff !important;
   border: none;
-  border-radius: var(--button-border-radius, 10px) !important;
+  border-radius: var(--button-border-radius, .625rem) !important;
   cursor: pointer;
   transition: all 0.2s ease;
 }
