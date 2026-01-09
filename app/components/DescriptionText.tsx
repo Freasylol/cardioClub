@@ -1,6 +1,6 @@
 import styles from "../styles/DescriptionText.module.css";
 
-export default function Text({
+export default function DescriptionText({
   children,
   className = "",
   ...props
