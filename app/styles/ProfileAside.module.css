@@ -1,5 +1,7 @@
 .profile__aside {
   width: 35%;
+
+  margin-top: 2rem;
 }
 
 .profile__aside__inner {
@@ -53,12 +55,20 @@
   margin-top: 1.875rem;
 }
 
+.profile__aside__link {
+  text-decoration: none;
+  outline: none;
+  border: none;
+
+  margin-bottom: 0.5rem;
+
+  
+}
+
 .profile__aside__btn {
   border: 2px solid #4480EA !important;
 
   text-transform: lowercase;
-
-  margin-bottom: 0.5rem;
 
   display: flex;
   align-items: center;
@@ -70,6 +80,6 @@
   width: 11.875rem;
 }
 
-.profile__aside__btn:last-child {
+.profile__aside__link:last-child {
   margin-bottom: 0;
 }

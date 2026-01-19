@@ -2,7 +2,6 @@
   margin-top: 50px;
 }
 
-
 .profile__header__wrapper {
   display: flex;
   align-items: center;
@@ -37,7 +36,6 @@
 }
 
 .profile__notification__wrapper {
-  /* border-color: #8A1A1A; */
   border: .125rem solid #8A1A1A;
   border-radius: 10px;
 
@@ -72,13 +70,10 @@
 .rates {
   margin-top: 40px;
 
-  /* display: flex; */
-
   width: 100%;
 }
 
 .rates__inner {
-  display: flex;
 
   width: 100%;
 
@@ -174,12 +169,3 @@
 .rates__pay__input:focus {
   border-color: #4480EA;
 }
-
-
-/* .pay__button:hover {
-  background-color: #45a049;
-} */
-
-/* .price {
-  font-weight: bold;
-} */

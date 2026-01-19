@@ -1,12 +1,12 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Profile from "../../components/Profile";
+import ProfileSettings from "../../components/ProfileSettings";
 
 export default function SubscribePage() {
   return (
     <div>
         <Header />
-        <Profile status="inactive"/>
+        <ProfileSettings/>
         <Footer />
     </div>
   );

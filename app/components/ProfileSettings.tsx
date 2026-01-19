@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "../styles/Profile.module.css";
+import styles from "../styles/ProfileSettings.module.css";
 import HeaderText from "./HeaderText";
 
 import checkMark from "../../public/images/check.png";
 import exclamationMark from "../../public/images/exclamation.png";
-
 
 import DescriptionText from "./DescriptionText";
 import Input from "./Input";
@@ -15,18 +14,9 @@ import SubHeaderText from "./SubHeaderText";
 
 import ProfileAside from "./ProfileAside";
 
-type SubscriptionStatus = "active" | "inactive";
 
-interface ProfileProps {
-  status: SubscriptionStatus;
-}
 
-const statusLabels: Record<SubscriptionStatus, string> = {
-  active: "Активна",
-  inactive: "Неактивна",
-};
-
-export default function Profile({ status }: ProfileProps) {
+export default function ProfileSettings() {
   return (
     <div className={styles.profile}>
       <div className="container">
@@ -34,13 +24,8 @@ export default function Profile({ status }: ProfileProps) {
           <div className={styles.rates}>
             <div className={styles.profile__header__wrapper}>
               <HeaderText color="#000" className="profile__header">
-                Ваша подписка
+                Настройки
               </HeaderText>
-              <div
-                className={`${styles.profile__header__marker} ${styles[status]}`}
-              >
-                {statusLabels[status]}
-              </div>
             </div>
             <div className={styles.profile__notification__wrapper}>
               <Image
@@ -55,11 +40,13 @@ export default function Profile({ status }: ProfileProps) {
               </div>
             </div>
             <div className={styles.rates__inner}>
-              <div className={styles.rates__subscription__block}>
-                <div className={styles.rates__items}>
-                  <DescriptionText className={styles.rates__header}>
+               <DescriptionText className={styles.rates__header}>
                     Выберите тарифный план
                   </DescriptionText>
+              <div className={styles.rates__subscription__block}>
+                
+                <div className={styles.rates__items}>
+                 
                   <Button
                     color="#4480EA"
                     backgroundColor="#F4F7FF"
