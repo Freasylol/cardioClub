@@ -10,7 +10,7 @@ export default function Header() {
     <header className={styles.header}>
             <div className="container">
                 <div className={styles.header__inner}>
-                    <Link href="" className={styles.nav__logo__link}>
+                    <Link href="/" className={styles.nav__logo__link}>
                         <Image src={logoImg} className={styles.nav__logo__img} alt=""></Image>
                     </Link>
                     <nav className={styles.nav}>
@@ -26,7 +26,7 @@ export default function Header() {
                     </nav>
                     <input type="text" placeholder="Поиск" className={styles.nav__input}>
                     </input>
-                    <Link href="" className={styles.nav__profile__link}>
+                    <Link href="/profile" className={styles.nav__profile__link}>
                         <Image src={profileIcon} className={styles.nav__profile__img} alt=""></Image>
                     </Link>
                 </div>

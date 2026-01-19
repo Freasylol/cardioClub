@@ -123,14 +123,13 @@ export default function Profile({ status }: ProfileProps) {
                 <Button backgroundColor="#F4F7FF" color="#4480EA" fontSize=".925rem" padding=".925rem 1rem" className={styles.profile__settings__btn}>
                   <Image className={styles.profile__settings__icon} src={discountIcon} alt=""></Image>Мои скидки
                 </Button>
-                <Button fontSize=".925rem" padding=".925rem 1rem" className={styles.profile__settings__btn}>
+                <Button fontSize=".925rem" padding=".8rem 1rem" className={styles.profile__settings__btn}>
                   <Image className={styles.profile__settings__icon} src={avatarIcon} alt=""></Image>Моя подписка
                 </Button>
                 <Button backgroundColor="#F4F7FF" color="#4480EA" fontSize=".925rem" padding=".925rem 1rem" className={styles.profile__settings__btn}>
                   <Image className={styles.profile__settings__icon} src={chatIcon} alt=""></Image>Поддержка
                 </Button>
               </div>
-              
             </div>
           </div>
         </div>
