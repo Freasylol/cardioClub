@@ -6,7 +6,7 @@ export default function SubscribePage() {
   return (
     <div>
         <Header />
-        <Profile />
+        <Profile status="inactive"/>
         <Footer />
     </div>
   );

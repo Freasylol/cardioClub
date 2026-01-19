@@ -11,6 +11,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   borderRadius?: string;
   backgroundColor?: string;
   hoverBackgroundColor?: string;
+  className?: string;
+  color?: string;
 }
 
 export default function Button({
@@ -20,7 +22,10 @@ export default function Button({
   borderRadius,
   backgroundColor,
   hoverBackgroundColor,
+  className = "",
   type,
+  color,
+
   ...props
 }: ButtonProps) {
   const safeType = type ?? 'button';
@@ -29,12 +34,13 @@ export default function Button({
     ['--button-font-size' as string]: fontSize || '1.25rem',
     ['--button-padding' as string]: padding || '.9375rem 1.5625rem',
     ['--button-border-radius' as string]: borderRadius || '.625rem',
+    ['--button-color' as string]: color || '#fff',
     ['--button-background-color' as string]: backgroundColor || '#4480EA',
     ['--button-hover-background-color' as string]: hoverBackgroundColor || '#3568C3',
   };
 
   return (
-    <button className={styles.button} style={styleVars} type={safeType} {...props}>
+    <button className={`${className} ${styles.button}`} style={styleVars} type={safeType} {...props}>
       {children}
     </button>
   );

@@ -1,16 +1,260 @@
-.profile__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.profile {
+  margin-top: 50px;
 }
 
-.profile__header {
-    font-family: var(--font-unbounded);
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 2.1875rem;
-    leading-trim: NONE;
-    line-height: 117%;
-    letter-spacing: -2%;
-    vertical-align: bottom;
+.profile__inner {
+  display: flex;
 }
+
+.profile__settings {
+  width: 35%;
+}
+
+.profile__settings__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  background-color: #F4F7FF;
+
+  border-radius: 15px;
+
+  padding-bottom: 1.5rem;
+}
+
+.profile__header__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  width: 100%;
+}
+
+.profile__settings__header {
+  font-family: var(--font-unbounded);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 35px;
+  leading-trim: NONE;
+  line-height: 117%;
+  letter-spacing: -2%;
+  vertical-align: bottom;
+
+  padding-top: 1.5rem;
+}
+
+.profile__settings__avatar {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+
+  border: .1875rem solid #4480EA;
+
+  margin-top: .625rem;
+}
+
+.profile__settings__icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.profile__settings__btns {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1.875rem;
+}
+
+.profile__settings__btn {
+  border: 2px solid #4480EA !important;
+
+  text-transform: lowercase;
+
+  margin-bottom: 0.5rem;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: 400 !important;
+
+  gap: .625rem;
+
+  width: 11.875rem;
+}
+
+.profile__settings__btn:last-child {
+  margin-bottom: 0;
+}
+
+.active {
+  background-color: #E3FFE3;
+  color: #436A00;
+}
+
+.inactive {
+  background-color: #FFE3E3;
+  color: #8A1A1A;
+}
+
+.profile__header__marker {
+  width: 90px;
+  border-radius: .625rem;
+
+  padding: .3125rem .9375rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__notification__wrapper {
+  /* border-color: #8A1A1A; */
+  border: .125rem solid #8A1A1A;
+  border-radius: 10px;
+
+  padding: 18px;
+
+  margin-top: 20px;
+
+  display: flex;
+
+  width: 500px;
+}
+
+.profile__notification__marker {
+  width: 25px;
+  height: 25px;
+
+  margin-right: 15px;
+}
+
+.profile__notification__text {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 15px;
+  leading-trim: NONE;
+  line-height: 123%;
+  letter-spacing: .0213rem;
+
+  color: #8A1A1A;
+}
+
+.rates {
+  margin-top: 40px;
+
+  /* display: flex; */
+
+  width: 100%;
+}
+
+.rates__inner {
+  display: flex;
+
+  width: 100%;
+
+  margin-top: 40px;
+}
+
+.rates__subscription__block {
+  display: flex;
+
+  width: 65%;
+}
+
+.rates__items {
+  width: 40%;
+}
+
+.rates__pay {
+  width: 60%;
+  display: flex;
+
+  flex-direction: column;
+
+  margin-left: 50px;
+}
+
+.rates__header {
+  font-weight: bold !important;
+  margin-bottom: 40px;
+}
+
+.rate__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 16.5625rem;
+
+  margin-bottom: 8px;
+}
+
+.rate__item:last-child {
+  margin-bottom: 0;
+}
+
+.rate__item:focus {
+  border: .0625rem solid #2964CC;
+}
+
+.rates__buy__btn {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  padding: .75rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: .75rem;
+  leading-trim: NONE;
+  line-height: 123%;
+  letter-spacing: .0213rem;
+
+}
+
+.rates__pay__btn {
+  margin-bottom: 15px;
+}
+
+.rates__pay__input {
+  width: 100%;
+  border-radius: 10px;
+  border: .0625rem solid #BBBBBB;
+  background-color: #FFFFFF;
+  padding-left: 10px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 15px;
+  outline: none;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.rates__pay__input:focus {
+  border-color: #4480EA;
+}
+
+
+/* .pay__button:hover {
+  background-color: #45a049;
+} */
+
+/* .price {
+  font-weight: bold;
+} */

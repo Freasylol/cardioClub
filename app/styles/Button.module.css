@@ -4,7 +4,7 @@
   font-family: var(--font-unbounded, sans-serif);
   font-weight: 700;
   font-size: var(--button-font-size, 1.25rem) !important;
-  color: #fff !important;
+  color: var(--button-color, #fff) !important;
   border: none;
   border-radius: var(--button-border-radius, .625rem) !important;
   cursor: pointer;
@@ -12,6 +12,6 @@
 }
 
 .button:hover {
-  background-color: #3568C3;
+  background-color: var(--button-hover-background-color,  #3568C3);
   transform: scale(1.05);
 }
