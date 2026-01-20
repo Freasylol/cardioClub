@@ -5,9 +5,7 @@ import Profile from "../../components/ProfileSubscription";
 export default function SubscribePage() {
   return (
     <div>
-        <Header />
         <Profile status="inactive"/>
-        <Footer />
     </div>
   );
 }
