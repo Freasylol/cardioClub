@@ -1,6 +1,7 @@
 "use client";
 
 import type React from "react";
+import { usePathname } from "next/navigation"; 
 import styles from "../styles/ProfileAside.module.css";
 
 import SubHeaderText from "./SubHeaderText";
@@ -15,6 +16,8 @@ import chatIcon from "../../public/images/chat__icon.png";
 import profileIcon from "../../public/images/profile-icon.png";
 
 export default function ProfileAside({}) {
+  const pathname = usePathname();
+  
   return (
     <div className={styles.profile__aside}>
       <div className={styles.profile__aside__inner}>
@@ -91,7 +94,14 @@ export default function ProfileAside({}) {
           </Link>
         </div>
       </div>
-      <Button backgroundColor="#8A1A1A" className={styles.profile__aside__exit}>Выход</Button>
+      {pathname === "/profile/settings" && (
+        <Button
+          backgroundColor="#8A1A1A"
+          className={styles.profile__aside__exit}
+        >
+          Выход
+        </Button>
+      )}
     </div>
   );
 }
