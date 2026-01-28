@@ -1,6 +1,6 @@
 .text {
     font-family: var(--font-montserrat);
-    font-weight: 400;
+    font-weight: var(--p-fontWeight, 400);
     font-style: Regular;
     font-size: 0.9375rem;
     leading-trim: NONE;

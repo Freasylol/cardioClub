@@ -1,0 +1,61 @@
+.cooperation__inner {
+}
+
+.founder__card {
+  width: 100%;
+  margin-top: 5.625rem;
+}
+
+.founder__card__inner {
+  display: flex;
+  justify-content: center;
+  gap: 1.875rem;
+
+  background-color: #F4F7FF;
+  border-radius: 15px;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.founder__img {
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+.founder__text {
+  width: 55%;
+}
+
+.founder__description {
+  margin-top: 1rem;
+}
+
+.specialists {
+  margin-top: 3.125rem;
+}
+
+.specialists__title {
+  margin-bottom: 2.5rem;
+}
+
+.specialists__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 120px;
+  margin: 0 auto;
+}
+
+.specialist__card {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.specialist__description {
+  margin-top: .625rem;
+}
+
+.specialist__img {
+  height: 200px;
+  width: 200px;
+}

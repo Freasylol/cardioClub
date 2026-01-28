@@ -23,12 +23,12 @@ export default function SubHeaderText({
     }
 
     return (
-        <h2
+        <h3
         style={styleVars}
         className={`${styles.text} ${className}`}
         {...props}
         >
         {children}
-        </h2>
+        </h3>
     );
 }
