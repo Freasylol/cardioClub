@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Discount.module.css";
 import HeaderText from "./HeaderText";
 
-import discountIcon from "../../public/images/image.png";
+import discountIcon from "../../public/images/discount__icon.png";
 import discountImg1 from "../../public/images/discount__img__1.png";
 import discountImg2 from "../../public/images/discount__img__2.png";
 
